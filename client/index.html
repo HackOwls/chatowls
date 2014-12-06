@@ -7,6 +7,7 @@
         <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
         <link href="assets/css/app.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.firebase.com/js/client/2.0.6/firebase.js"></script>
     </head>
     <body>
         <div id="wrapper">
@@ -43,7 +44,8 @@
 
         <script src="assets/js/app.js"></script>
         <script src="assets/js/angular.js"></script>
-                <script>
+        <script src="assets/js/auth.js"></script>
+        <script>
             fAuth.onAuth(function(authData) {
                 var redirect = "messages.html";
                 if(typeof authData !== "undefined" && authData != null){
