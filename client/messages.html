@@ -11,18 +11,18 @@
         <script src="assets/js/app.js"></script>
 
         <script>
-                fAuth.onAuth(function(authData) {
-                            if(typeof authData === "undefined" || authData == null){
-                                location.href = "index.html";
-                            }
-                });
+                // fAuth.onAuth(function(authData) {
+                //             if(typeof authData === "undefined" || authData == null){
+                //                 location.href = "index.html";
+                //             }
+                // });
         </script>
     </head>
     <body>
         <div id="wrapper">
-            <div id="header">
+            <div id="header" ng-controller="HeaderCtrl">
                     <span>ChatOwls</span>
-                    <a id="logout" href="logout.html">Logout</a>
+                    <a id="logout" ng-click='unauth()'>Logout</a>
             </div>
             <div id="content-wrapper">
                 <div id="side-box">
