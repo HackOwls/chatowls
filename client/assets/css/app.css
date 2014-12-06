@@ -200,6 +200,6 @@ body{
     text-decoration: none;
     color: inherit;
 }
-#header #side-profile-menu #logout:hover{
+#header #side-profile-menu .logout:hover{
     color: #000;   
 }
